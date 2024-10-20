@@ -9,3 +9,13 @@
 # Вывод:
 # 5 3
 
+def nod(a, b):
+    if a==0 or b==0:
+        return max(a, b)
+    return nod(max(a, b) % min(a, b), min(a, b))
+
+
+m=int(input())
+n=int(input())
+print(m // nod(m, n))
+print(n // nod(m, n))
