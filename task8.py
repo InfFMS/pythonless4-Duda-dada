@@ -7,3 +7,15 @@
 # Вывод:
 # 2*3*3*3*7
 
+def frog(a)
+    a=int(input())
+
+  if a>1:
+      if a%b ==0:
+          n/=b
+          print(b)
+      else b =
+
+
+
+
