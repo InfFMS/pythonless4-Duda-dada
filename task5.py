@@ -11,9 +11,3 @@ def dog(n):
         n_1.append(n[i-1])
     return "".join(n_1)
 print(dog(n))
-=======
-n_1 = []
-for i in range(len(n), 0, -1):
-    n_1.append(n[i-1])
-print(int"".join(n_1)))
-

@@ -17,7 +17,7 @@ def russia(n):
     if n==9:
         return 'IX'
     if n==10 or n==20 or n==30:
-        return "X"*(n/10)
+        return "X"*(n//10)
     if n==40:
         return 'XL'
     if n in[50,60,70,80]:
