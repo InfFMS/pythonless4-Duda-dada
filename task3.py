@@ -6,3 +6,35 @@
 # 2013
 # MMXIII
 
+n=int(input())
+def russia(n):
+    if n<= 3:
+        return 'I' * n
+    if n==4:
+        return "IV"
+    if n<= 8:
+        return "V"+'I' * (n-5)
+    if n==9:
+        return 'IX'
+    if n==10 or n==20 or n==30:
+        return "X"*(n//10)
+    if n==40:
+        return 'XL'
+    if n in[50,60,70,80]:
+        return 'L'+'X'*(n//10-5)
+    if n==90:
+        return "XC"
+    if n in[100,200,300]:
+        return "C" *(n//100)
+    if n==400:
+        return 'CD'
+    if n in[500,600,700,800]:
+        return 'D'+'C' *(n //100-5)
+    if n==900:
+        return 'CM'
+    if n in[1000,2000,3000]:
+        return 'M' *(n//1000)
+    return russia(n //1000*1000) + russia(n%1000//100*100) +russia(n%100//10*10)+russia(n%10)
+print(russia(int(input())))
+
+
