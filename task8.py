@@ -15,3 +15,9 @@ def rec(n):
             return str(i) + "*" +rec(n/ i)
     return str(n)
 print(rec(int(input())))
+
+
+
+
+
+
